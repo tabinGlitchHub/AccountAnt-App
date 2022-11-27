@@ -2,13 +2,9 @@ package com.personal.accountant.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
-val Purple200 = Color(0xFFBB86FC)
-val Purple500 = Color(0xFF6200EE)
-val Purple700 = Color(0xFF3700B3)
-val Teal200 = Color(0xFF03DAC5)
-val LeadBackground = Color(0xFF1C1C1C)
-val litFont = Color(0xFF1B84C6)
-val lockKey = Color(0xFF242424)
-val lockKeySelected = Color(0xFF141414)
-val unlitFont = Color(0xFF676767)
+val primaryDark = Color(0xFF262626)
+val primaryDarkVariant = Color(0xff2b2b2b)
+val primaryMarine = Color(0xff00a79d)
+val blendedPrimaryDark = Color(0xff242424)
 val subtleWhite = Color(0xFF9E9E9E)
+val fontColor = Color(0xff989898)

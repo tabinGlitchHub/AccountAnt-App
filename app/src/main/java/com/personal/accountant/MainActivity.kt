@@ -54,7 +54,7 @@ fun LockScreen() {
     Column(
         modifier = Modifier
             .fillMaxSize()
-            .background(LeadBackground),
+            .background(primaryDark),
         horizontalAlignment = Alignment.CenterHorizontally,
     ) {
         Row(
@@ -64,7 +64,7 @@ fun LockScreen() {
         ) {
             Card(
                 shape = RoundedCornerShape(10.dp),
-                backgroundColor = lockKeySelected,
+                backgroundColor = Color(0xff1a1a1a),
                 modifier = Modifier.height(50.dp)
             ) {
                 Text(
@@ -72,7 +72,7 @@ fun LockScreen() {
                     modifier = Modifier
                         .width(screenWidth - 100.dp)
                         .absolutePadding(20.dp, 10.dp, 20.dp, 5.dp),
-                    color = unlitFont,
+                    color = Color(0xFF676767),
                     textAlign = TextAlign.Center,
                     fontSize = 20.sp
                 )
@@ -160,7 +160,7 @@ fun LockButton(text: String) {
         modifier = Modifier
             .height(60.dp)
             .width(60.dp),
-        colors = ButtonDefaults.buttonColors(backgroundColor = lockKey),
+        colors = ButtonDefaults.buttonColors(backgroundColor = blendedPrimaryDark),
     ) {
         Text(text = text, color = subtleWhite, fontSize = 20.sp)
     }
@@ -183,7 +183,7 @@ fun DeleteLastButton() {
         modifier = Modifier
             .height(60.dp)
             .width(60.dp),
-        colors = ButtonDefaults.buttonColors(backgroundColor = lockKey)
+        colors = ButtonDefaults.buttonColors(backgroundColor = blendedPrimaryDark)
     ) {
         Text(text = "<", color = subtleWhite, fontSize = 20.sp)
     }
